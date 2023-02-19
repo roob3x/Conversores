@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		387DD533299E650600799042 /* ConversoresApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD532299E650600799042 /* ConversoresApp.swift */; };
-		387DD535299E650600799042 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD534299E650600799042 /* ContentView.swift */; };
 		387DD537299E650800799042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387DD536299E650800799042 /* Assets.xcassets */; };
 		387DD53A299E650800799042 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387DD539299E650800799042 /* Preview Assets.xcassets */; };
+		387DD542299E782F00799042 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD541299E782F00799042 /* SplashView.swift */; };
+		387DD546299E796200799042 /* ConversorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD545299E796200799042 /* ConversorView.swift */; };
+		387DD55029A0108B00799042 /* SplashUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD54F29A0108B00799042 /* SplashUiState.swift */; };
+		387DD55229A010B700799042 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD55129A010B700799042 /* SplashViewModel.swift */; };
+		387DD55529A010D400799042 /* SplashViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD55429A010D400799042 /* SplashViewRouter.swift */; };
+		387DD55829A0124B00799042 /* ConversorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD55729A0124B00799042 /* ConversorViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		387DD52F299E650600799042 /* Conversores.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conversores.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		387DD532299E650600799042 /* ConversoresApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversoresApp.swift; sourceTree = "<group>"; };
-		387DD534299E650600799042 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		387DD536299E650800799042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		387DD539299E650800799042 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		387DD541299E782F00799042 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		387DD545299E796200799042 /* ConversorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversorView.swift; sourceTree = "<group>"; };
+		387DD54F29A0108B00799042 /* SplashUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashUiState.swift; sourceTree = "<group>"; };
+		387DD55129A010B700799042 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		387DD55429A010D400799042 /* SplashViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewRouter.swift; sourceTree = "<group>"; };
+		387DD55729A0124B00799042 /* ConversorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversorViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,9 @@
 		387DD531299E650600799042 /* Conversores */ = {
 			isa = PBXGroup;
 			children = (
+				387DD543299E791700799042 /* Conversores */,
+				387DD540299E782000799042 /* Splash */,
 				387DD532299E650600799042 /* ConversoresApp.swift */,
-				387DD534299E650600799042 /* ContentView.swift */,
 				387DD536299E650800799042 /* Assets.xcassets */,
 				387DD538299E650800799042 /* Preview Content */,
 			);
@@ -65,6 +76,66 @@
 				387DD539299E650800799042 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		387DD540299E782000799042 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				387DD54D29A0104300799042 /* Model */,
+				387DD54C29A0103800799042 /* View */,
+				387DD54B29A0102F00799042 /* ViewModel */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		387DD543299E791700799042 /* Conversores */ = {
+			isa = PBXGroup;
+			children = (
+				387DD55629A0123900799042 /* ViewModel */,
+				387DD544299E791E00799042 /* View */,
+			);
+			path = Conversores;
+			sourceTree = "<group>";
+		};
+		387DD544299E791E00799042 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				387DD545299E796200799042 /* ConversorView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		387DD54B29A0102F00799042 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				387DD54F29A0108B00799042 /* SplashUiState.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		387DD54C29A0103800799042 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				387DD541299E782F00799042 /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		387DD54D29A0104300799042 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				387DD55129A010B700799042 /* SplashViewModel.swift */,
+				387DD55429A010D400799042 /* SplashViewRouter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		387DD55629A0123900799042 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				387DD55729A0124B00799042 /* ConversorViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +208,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				387DD535299E650600799042 /* ContentView.swift in Sources */,
+				387DD55529A010D400799042 /* SplashViewRouter.swift in Sources */,
 				387DD533299E650600799042 /* ConversoresApp.swift in Sources */,
+				387DD55029A0108B00799042 /* SplashUiState.swift in Sources */,
+				387DD55229A010B700799042 /* SplashViewModel.swift in Sources */,
+				387DD55829A0124B00799042 /* ConversorViewModel.swift in Sources */,
+				387DD546299E796200799042 /* ConversorView.swift in Sources */,
+				387DD542299E782F00799042 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
