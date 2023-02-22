@@ -18,7 +18,7 @@ struct SplashView: View {
             case .loading:
                 LoadingView()
             case .goToConversors:
-                viewModel.conversosView()
+                viewModel.conversoresView()
             }
         }
         .onAppear(perform: viewModel.onAppear)

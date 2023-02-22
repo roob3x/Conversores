@@ -20,7 +20,7 @@ class SplashViewModel: ObservableObject {
 }
 
 extension SplashViewModel {
-    func conversosView() -> some View {
+    func conversoresView() -> some View {
         return SplashViewRouter.makeConversorView()
     }
 }
