@@ -1,24 +1,26 @@
 //
-//  CelsiuView.swift
+//  ConversorView.swift
 //  Conversores
 //
-//  Created by Roberto Filho on 21/02/23.
+//  Created by Roberto Filho on 22/02/23.
 //
 
 import SwiftUI
 
-struct CelsiuView: View {
+struct ConversorView: View {
     @ObservedObject var viewModel: ConversorViewModel
     var body: some View {
         Group {
             ZStack(alignment: .center) {
                 VStack(alignment: .leading, spacing: 0, content: {
                     HStack(spacing: 0){
-                        Text("Temperatura")
+                        Text("\(viewModel.title)")
                             .multilineTextAlignment(.leading)
                             .padding(.horizontal, 20)
                             .frame(maxWidth: .infinity)
-                        Text("≫")
+                        Button("≫") {
+                            viewModel.conversorChange()
+                        }
                             .padding()
                             .multilineTextAlignment(.trailing)
                     }
@@ -35,13 +37,13 @@ struct CelsiuView: View {
                     }
                     
                     HStack(spacing: 0) {
-                        Button("Celsius") {
-                            viewModel.calcCelcius()
+                        Button("\(viewModel.btn1)") {
+                            viewModel.calcBtn1()
                         }
                         .frame(maxWidth: .infinity)
                         .multilineTextAlignment(.leading)
-                        Button("Firenheint") {
-                            viewModel.calcFahrenheit()
+                        Button("\(viewModel.btn2)") {
+                            viewModel.calcBtn2()
                         }
                         .frame(maxWidth: .infinity)
                     }
@@ -65,7 +67,6 @@ struct CelsiuView: View {
                                 .background(Color.white)
                     }
                     
-                    
                     Spacer()
                 })
 
@@ -74,8 +75,8 @@ struct CelsiuView: View {
     }
 }
 
-struct CelsiuView_Previews: PreviewProvider {
+struct ConversorView_Previews: PreviewProvider {
     static var previews: some View {
-        CelsiuView(viewModel: ConversorViewModel())
+        ConversorView(viewModel: ConversorViewModel())
     }
 }

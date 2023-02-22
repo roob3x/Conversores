@@ -9,6 +9,6 @@ import SwiftUI
 
 enum SplashViewRouter {
     static func makeConversorView() -> some View {
-        return CelsiuView(viewModel: ConversorViewModel())
+        return ConversorView(viewModel: ConversorViewModel())
     }
 }

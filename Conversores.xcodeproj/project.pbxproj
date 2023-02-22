@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3869C75229A583EB006BB1A3 /* CelsiuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3869C75129A583EB006BB1A3 /* CelsiuView.swift */; };
 		387DD533299E650600799042 /* ConversoresApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD532299E650600799042 /* ConversoresApp.swift */; };
 		387DD537299E650800799042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387DD536299E650800799042 /* Assets.xcassets */; };
 		387DD53A299E650800799042 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387DD539299E650800799042 /* Preview Assets.xcassets */; };
@@ -16,10 +15,11 @@
 		387DD55229A010B700799042 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD55129A010B700799042 /* SplashViewModel.swift */; };
 		387DD55529A010D400799042 /* SplashViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD55429A010D400799042 /* SplashViewRouter.swift */; };
 		387DD55829A0124B00799042 /* ConversorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DD55729A0124B00799042 /* ConversorViewModel.swift */; };
+		3896BEF129A6975F00838FC1 /* ConversorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3896BEF029A6975F00838FC1 /* ConversorModel.swift */; };
+		3896BEF329A6A7BA00838FC1 /* ConversorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3896BEF229A6A7BA00838FC1 /* ConversorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3869C75129A583EB006BB1A3 /* CelsiuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelsiuView.swift; sourceTree = "<group>"; };
 		387DD52F299E650600799042 /* Conversores.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conversores.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		387DD532299E650600799042 /* ConversoresApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversoresApp.swift; sourceTree = "<group>"; };
 		387DD536299E650800799042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -29,6 +29,8 @@
 		387DD55129A010B700799042 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		387DD55429A010D400799042 /* SplashViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewRouter.swift; sourceTree = "<group>"; };
 		387DD55729A0124B00799042 /* ConversorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversorViewModel.swift; sourceTree = "<group>"; };
+		3896BEF029A6975F00838FC1 /* ConversorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversorModel.swift; sourceTree = "<group>"; };
+		3896BEF229A6A7BA00838FC1 /* ConversorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,30 +44,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3869C74E29A5837C006BB1A3 /* Celsiu */ = {
-			isa = PBXGroup;
-			children = (
-				3869C75029A5839E006BB1A3 /* View */,
-				3869C74F29A58389006BB1A3 /* ViewModel */,
-			);
-			path = Celsiu;
-			sourceTree = "<group>";
-		};
-		3869C74F29A58389006BB1A3 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		3869C75029A5839E006BB1A3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				3869C75129A583EB006BB1A3 /* CelsiuView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		387DD526299E650600799042 = {
 			isa = PBXGroup;
 			children = (
@@ -85,7 +63,6 @@
 		387DD531299E650600799042 /* Conversores */ = {
 			isa = PBXGroup;
 			children = (
-				3869C74E29A5837C006BB1A3 /* Celsiu */,
 				387DD543299E791700799042 /* Conversores */,
 				387DD540299E782000799042 /* Splash */,
 				387DD532299E650600799042 /* ConversoresApp.swift */,
@@ -116,6 +93,7 @@
 		387DD543299E791700799042 /* Conversores */ = {
 			isa = PBXGroup;
 			children = (
+				3896BEEF29A6974F00838FC1 /* Model */,
 				387DD55629A0123900799042 /* ViewModel */,
 				387DD544299E791E00799042 /* View */,
 			);
@@ -125,6 +103,7 @@
 		387DD544299E791E00799042 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3896BEF229A6A7BA00838FC1 /* ConversorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,6 +139,14 @@
 				387DD55729A0124B00799042 /* ConversorViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3896BEEF29A6974F00838FC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3896BEF029A6975F00838FC1 /* ConversorModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,9 +220,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				387DD55529A010D400799042 /* SplashViewRouter.swift in Sources */,
+				3896BEF129A6975F00838FC1 /* ConversorModel.swift in Sources */,
 				387DD533299E650600799042 /* ConversoresApp.swift in Sources */,
 				387DD55029A0108B00799042 /* SplashUiState.swift in Sources */,
-				3869C75229A583EB006BB1A3 /* CelsiuView.swift in Sources */,
+				3896BEF329A6A7BA00838FC1 /* ConversorView.swift in Sources */,
 				387DD55229A010B700799042 /* SplashViewModel.swift in Sources */,
 				387DD55829A0124B00799042 /* ConversorViewModel.swift in Sources */,
 				387DD542299E782F00799042 /* SplashView.swift in Sources */,
