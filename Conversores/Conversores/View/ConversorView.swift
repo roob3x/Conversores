@@ -38,11 +38,15 @@ struct ConversorView: View {
                     
                     HStack(spacing: 0) {
                         Button("\(viewModel.btn1)") {
+                            viewModel.actionbtn1 = true
+                            viewModel.actionbtn2 = false
                             viewModel.calcBtn1()
                         }
                         .frame(maxWidth: .infinity)
                         .multilineTextAlignment(.leading)
                         Button("\(viewModel.btn2)") {
+                            viewModel.actionbtn1 = false
+                            viewModel.actionbtn2 = true
                             viewModel.calcBtn2()
                         }
                         .frame(maxWidth: .infinity)
