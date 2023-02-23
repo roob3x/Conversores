@@ -62,6 +62,7 @@ class ConversorViewModel: ObservableObject {
             result = 0.0
             label = ""
         }
+        
     }
     
     func calcBtn1() {

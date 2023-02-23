@@ -41,6 +41,7 @@ struct ConversorView: View {
                             viewModel.actionbtn1 = true
                             viewModel.actionbtn2 = false
                             viewModel.calcBtn1()
+                            UIApplication.shared.endEditing()
                         }
                         .frame(maxWidth: .infinity)
                         .multilineTextAlignment(.leading)
@@ -48,6 +49,7 @@ struct ConversorView: View {
                             viewModel.actionbtn1 = false
                             viewModel.actionbtn2 = true
                             viewModel.calcBtn2()
+                            UIApplication.shared.endEditing()
                         }
                         .frame(maxWidth: .infinity)
                     }
@@ -76,6 +78,12 @@ struct ConversorView: View {
 
             }
         }
+    }
+}
+
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
 
